@@ -1,9 +1,9 @@
 camera_id,slice_type,frames,risk,rationale
-front,normal,,TODO,TODO
-front,hard,,TODO,TODO
-rear,normal,,TODO,TODO
-rear,hard,,TODO,TODO
-left,normal,,TODO,TODO
-left,hard,,TODO,TODO
-right,normal,,TODO,TODO
-right,hard,,TODO,TODO
+front,normal,25,"medium (vừa) — vật nhỏ ở xa, gần ngưỡng H=40 pixel (điểm ảnh)",Giả định để lập kế hoạch: front (camera trước) thường gặp nhiều vật khi xe chạy thẳng. Chọn 25 ảnh thường để làm mốc kiểm loại nhãn và box (khung chữ nhật bao vật). Rải theo đoạn đường và giờ; mỗi cảnh tối đa 2 ảnh trong một tầng. Chưa có dữ liệu bốn camera để xác nhận mật độ cao nhất.
+front,hard,35,"high (cao) — rider (người ngồi trên xe hai bánh), xe ba bánh, vùng rìa ảnh cong, cụm đông xe và ngược sáng","C0/B4-mid có bất đồng R03 về người ngồi hay dắt xe, xe ba bánh bị che và vật gần ngưỡng H=40. Dùng các ca này để đề xuất mẫu khó cho front (camera trước), không khẳng định front gặp nhiều nhất. Chọn theo tag (dấu phân nhóm): night/rain/backlight (đêm/mưa/ngược sáng), crowd (đông xe), edge zone (vùng rìa) r/R≥0.6, tức khoảng cách tới tâm chia bán kính vòng kính."
+rear,normal,20,medium (vừa) — có thể có vật sát camera sau,"Chọn 20 ảnh normal (thường) làm mốc cho rear (camera sau). Phân bổ ít hơn front dựa trên giả định ít vật hơn khi xe tiến, chưa phải số đo từ dữ liệu. Rải theo cảnh và tốc độ."
+rear,hard,25,high (cao) — lùi hoặc đỗ xe; vật gần bị vòng kính cắt hoặc lẫn vào phần xe gắn camera,"Chọn 25 ảnh khó ở rear (camera sau). Kiểm truncated (bị biên ảnh/vòng kính cắt) và ego_body/ignore (phần xe gắn camera/vùng bỏ qua), theo R07–R09. Chọn ca tốc độ thấp, gear R (số lùi) và vật ở edge (vùng rìa ảnh)."
+left,normal,20,"medium (vừa) — vật đi song song, có thể bị kéo dài ở cạnh ảnh","Chọn 20 ảnh thường làm mốc cho left (camera trái). Đề xuất soát xe vượt song song và méo fisheye (ống kính mắt cá, ảnh cong ở rìa); chưa có số đo thực tế của camera này."
+left,hard,30,"high (cao) — seam (vùng hai camera nhìn chồng nhau) trước-trái/sau-trái, xe máy vượt sát và vạch đỗ cong","Chọn 30 ảnh khó ở left (camera trái). Cùng vật có thể xuất hiện ở front/rear (camera trước/sau) và left. Kiểm xe bị biên ảnh cắt, các góc seam và parking_line (vạch chia ô đỗ) ở bãi đỗ."
+right,normal,20,"medium (vừa) — lề đường, người đi bộ và xe đỗ",Chọn 20 ảnh thường làm mốc cho right (camera phải). Kế hoạch giả định xe đi bên phải đường nên camera phải nhìn về phía lề; đây không phải kết luận về bối cảnh giao thông Ấn Độ trong ADASIND.
+right,hard,25,"high (cao) — người sát lề bị che, nhầm curb (bó vỉa) với parking_line (vạch chia ô đỗ), seam trước-phải",Chọn 25 ảnh khó ở right (camera phải). So vai trò bó vỉa/vạch ô theo docs/11 và kiểm occluded (bị vật khác che). Chọn cả seam (vùng hai camera nhìn chồng nhau) trước-phải và bãi đỗ song song lề.
