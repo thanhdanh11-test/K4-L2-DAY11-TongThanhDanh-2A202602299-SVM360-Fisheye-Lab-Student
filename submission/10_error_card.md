@@ -32,7 +32,7 @@ Các bảng trên đếm các dòng trong `findings.csv` qua nhiều vòng làm 
   - `MISSING` (thiếu khung ghép được) có 8 dòng qua các vòng: 1 ở r2_qa, 1 ở r1_craft và 6 ở r3_diag. Sáu dòng sau gồm 3 xe ba bánh M không ghép đúng loại, 2 người R7/R8 do L10 gộp, và van R3+M3 do L6 sai loại. Ca r2_qa L5 là nghi vấn cũ; L đã có L4 Pedestrian riêng.
   - `IGNORE_SCOPE` (bất đồng vùng được tính) có 4 dòng, nhưng cùng nói về cụm 265065 L1–L3: 3 dòng r1_craft và 1 dòng tổng hợp r3_diag. Giữ `E2_guideline_gap` (luật chưa đủ rõ), P0 (ưu tiên xử lý phạm vi trước), theo R06/R10.
 - Cách sửa và ai nhận việc (`owner`):
-  - `annotator` (người vẽ): đã rework (sửa lại nhãn) ba ca P1 (lỗi vật cần sửa): L6 đổi sang Car, xóa L3, tách L10. Bảng `rework/delta.md` cho thấy mid ghép đúng tăng 10→13, thiếu giảm 3→0, thừa giảm 4→1.
+  - `annotator` (người vẽ): đã rework (sửa lại nhãn) ba ca P1 (lỗi vật cần sửa): L6 đổi sang Car, xóa L3, tách L10. Sau đó bản rework được sửa tay thêm và khóa lại (48A2-5E6E, decision log D9). Theo bảng `rework/delta.md`, ở mid ghép đúng tăng 10→11, thiếu giảm 3→2 (còn thiếu người R6, R7 ở 265065), thừa giảm 4→1. Chi tiết xem phần nhận xét trong delta.
   - `ai_team` (nhóm AI): Ticket 1 đề nghị kiểm loại ThreeWheeler và quy ước rider (người ngồi trên xe hai bánh) của YOLO26m trên 48 ảnh. Trong lúc chờ, không dùng nhãn AI của các ca này làm nhãn điền sẵn.
   - `guideline` (nhóm phụ trách luật): Ticket 2 đề nghị duyệt R06a, phiên bản v1.1.0, về `crowd_or_group` (cụm không tách được từng vật).
   - `qa` (người kiểm tra): Ticket 3 đề nghị xác minh và bổ sung Bike 261480 L2 vào bản mẫu; người soát thứ hai đo lại 265065 L7/L9.

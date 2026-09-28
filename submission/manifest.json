@@ -17,13 +17,13 @@
     },
     {
       "file": "parking/annotations.xml",
-      "lines": 57,
-      "sha256": "b9ebe39a1faac00a6cdf57d3f77ed84d819047314a47f5e61750498019f1e00a"
+      "lines": 58,
+      "sha256": "03b1848e353aead7315f036dd55d9301f356cb774e96b663a1b461dae439bc9c"
     },
     {
       "file": "parking/observations.md",
       "lines": 17,
-      "sha256": "43483dcd484481977e29ba35182db9fffa8176d5dde2c79a0302b9af2cb723b9"
+      "sha256": "436be4156aa8fb678e1af35483f3c1440c34b67378483abe851c8e95961adb0b"
     },
     {
       "file": "p1_calib/annotations.xml",
@@ -131,19 +131,19 @@
     },
     {
       "file": "rework/annotations-v2.xml",
-      "lines": 417,
-      "sha256": "8db56d8e2f93d7a622a8eaa9e9d4d04b4e99154a2bf969db6a90f22d47d7c422"
+      "lines": 399,
+      "sha256": "48a25e6e48d29664244076052297c2930464a60fc2b5d728ca949758b065315d"
     },
     {
       "file": "rework/lock2.txt",
-      "lines": 9,
-      "sha256": "ba70fb403d377252089a406fc3312ebadd2e22c6314f4fa1571db38f2ba35d8a",
-      "locked_at": "2026-09-28T16:43:26+07:00"
+      "lines": 19,
+      "sha256": "38fc642b1ca5ae034249b492c190ade09d53394473537f4d0cce19c96c4488a3",
+      "locked_at": "2026-09-28T18:43:57+07:00"
     },
     {
       "file": "rework/delta.md",
-      "lines": 28,
-      "sha256": "e3a96ccab96af312e5d7817b9484496ed114aa4264283ad02b45a023d47abebc"
+      "lines": 37,
+      "sha256": "efe784e9c09ed19482db3ce09ccf654539e73433b656b0ed9814b420278b7a04"
     },
     {
       "file": "findings.csv",
@@ -153,7 +153,7 @@
     {
       "file": "10_error_card.md",
       "lines": 44,
-      "sha256": "66a420fdebaeb8fd45e8ae2ec9f4d89bb21d3da0b5b699f868b2d1c2e96a3fd7"
+      "sha256": "8e3596098b633eff43130ed640a94498b238b949dfbf45fa3c680a1ee2ca09e2"
     },
     {
       "file": "20_guideline_patch.md",
@@ -167,8 +167,8 @@
     },
     {
       "file": "40_decision_log.csv",
-      "lines": 9,
-      "sha256": "52b22b2150d2e509b88eb64421eb2feef179f4dddc7e66e9b9246417aa1577e6"
+      "lines": 10,
+      "sha256": "42c0aade0f5823d1550688215c72560a4978c1a85f5a2025026c33f67056d6b4"
     },
     {
       "file": "45_review_plan.md",

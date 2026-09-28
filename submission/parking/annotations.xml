@@ -2,14 +2,15 @@
 <annotations>
   <version>1.1</version>
   <meta>
-    <job>
-      <id>80</id>
+    <task>
+      <id>59</id>
+      <name>Day11 · parking_line · public-sample</name>
       <size>1</size>
       <mode>annotation</mode>
       <overlap>0</overlap>
       <bugtracker></bugtracker>
       <created>2026-09-28 09:20:46.896553+00:00</created>
-      <updated>2026-09-28 09:24:02.714779+00:00</updated>
+      <updated>2026-09-28 11:41:51.271524+00:00</updated>
       <subset>default</subset>
       <start_frame>0</start_frame>
       <stop_frame>0</stop_frame>
@@ -19,7 +20,7 @@
           <id>80</id>
           <start>0</start>
           <stop>0</stop>
-          <url>http://localhost:8080/api/jobs/80/dataset/export/api/jobs/80</url>
+          <url>http://localhost:8080/api/tasks/59/dataset/export/api/jobs/80</url>
         </segment>
       </segments>
       <owner>
@@ -43,15 +44,15 @@
           </attributes>
         </label>
       </labels>
-    </job>
-    <dumped>2026-09-28 09:24:05.467535+00:00</dumped>
+    </task>
+    <dumped>2026-09-28 11:42:45.302002+00:00</dumped>
   </meta>
   <image id="0" name="parking-lot-core.jpg" width="960" height="720">
     <polyline label="parking_line" source="file" occluded="0" points="407.00,655.00;464.00,686.00;525.00,719.00" z_order="0">
     </polyline>
     <polyline label="parking_line" source="file" occluded="0" points="697.00,624.00;826.00,653.00;959.00,684.00" z_order="0">
     </polyline>
-    <polygon label="free_space" source="file" occluded="0" points="75.00,583.00;264.00,578.00;450.00,568.00;670.00,551.00;929.00,540.00;945.00,579.00;880.00,592.00;669.00,609.00;390.00,636.00;60.00,662.00" z_order="0">
+    <polygon label="free_space" source="manual" occluded="0" points="0.00,475.50;245.30,479.80;482.70,478.00;675.80,479.70;959.40,480.40;960.00,580.20;880.00,592.00;669.00,609.00;390.00,636.00;0.00,670.20" z_order="0">
     </polygon>
   </image>
 </annotations>
